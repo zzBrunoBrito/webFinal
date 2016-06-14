@@ -42,8 +42,8 @@
 
 
 
-    pg_close($conn);
+    //pg_close($conn);
 
-    header('Location: /webFinal/main.php');
+    //header('Location: /webFinal/main.php');
 
 ?>
