@@ -1,5 +1,44 @@
 header{
-    /*margin: 0px;*/
+    padding: 15px;
+    background: #1D6307;
+    font-size: 2em;
+    color: white;
+}
+
+label{
+    font-size: 1em;
+}
+
+.button:link{
+    background: #2CA615;
+}
+
+.button:visited{
+    background: #1D6307;
+}
+
+.button:hover{
+    background: #1D6307;
+}
+
+.button:active{
+    background: #1D6307;
+}
+
+
+
+header+form{
+    padding-top: 100px;
+}
+
+header+img{
+    /*width: 907px;*/
+    /*height: 425px;*/
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    top: calc(50% - 212px);
+    left:calc(50% - 453px);
 }
 
 div>input[value=Entrar]{
@@ -19,8 +58,9 @@ div>input[value=Entrar]{
     margin-top: 10px;
     /*top: calc(50% - 125px);*/
     /*z-index: -3;*/
-
 }
+
+    
 
 .pdf:nth-child(1){
     margin-left: 5%;
@@ -78,7 +118,14 @@ i{
 
     }
 
+    body>img{
+        position: absolute;
+        z-index: -1;
+        opacity: 0.3;
 
+        top: calc(50% - 85px);
+        left: 0;
+    }
 
 }
 
