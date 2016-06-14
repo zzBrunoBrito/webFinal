@@ -1,0 +1,84 @@
+header{
+    /*margin: 0px;*/
+}
+
+div>input[value=Entrar]{
+    font-size: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.pdf{
+    position: relative;
+    width: 25%;
+    height: 250px;
+    background: #C3C0C3;
+    border-radius: 4px;
+    margin-top: 10px;
+    /*top: calc(50% - 125px);*/
+    /*z-index: -3;*/
+
+}
+
+.pdf:nth-child(1){
+    margin-left: 5%;
+    left: 10%;
+
+}
+
+.pdf:nth-child(2){
+    margin-right: 5%;
+    right: 10%;
+}
+
+i{
+    font-size: 2.5em;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 0;
+    left: 85%;
+}
+
+.toast{
+    padding: 25px;
+    position: absolute;
+    background: #D5D2D5;
+    border-radius: 3px;
+    left: calc(50% - 230px);
+    top:15%;
+    opacity: 0;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+    .toast{
+        text-align: center;
+        max-width: 250px;
+        left: calc(50% - 125px);
+    }
+    .pdf{
+        position: relative;
+        background: #C3C0C3;
+        width:250px;
+        height: 180px;
+    }
+
+    .pdf:nth-child(1){
+        margin-bottom: 3%;
+
+    }
+
+    .pdf:nth-child(2){
+        margin-top: 3%;
+
+    }
+
+
+
+}
+

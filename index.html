@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+      <title>Foundation for Sites</title>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+      <script src="js/vendor/jquery.js"></script>
+
+
+
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
+      <script src="index.js"></script>
+
+  </head>
+  <body>
+        <header class="row">
+            <p>Login</p>
+        </header>
+
+        <form class="login" method="post" action="php/login.php">
+            <div class="row">
+
+                <div class="large-5 columns">
+                    <label>CPF
+                        <input type="text" name="cpf">
+                    </label>
+                </div>
+
+                <div class="large-5 columns">
+                    <label>Senha
+                        <input type="password" name="pass">
+                    </label>
+                </div>
+            </div>
+
+            </div>
+            <div class="row text-center">
+                <input type="submit" class="button large-4 small-2" value="Entrar">
+            </div>
+        </form>
+
+        <div class="row text-center">
+            <button class="button large-3 small-2" value="CriarConta">Criar conta</button>
+        </div>
+
+        <form style="display:none" class="newAccount" method="post" action="php/cadastro.php">
+            <div class="row">
+                <div class="large-5 columns">
+                    <label>CPF
+                        <input type="text" name="cpf">
+                    </label>
+                </div>
+                <div class="large-5 columns">
+                    <label>Senha
+                        <input type="password" name="senha">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-5 columns">
+                    <label>Nome
+                        <input type="text" name="nome">
+                    </label>
+                </div>
+                <div class="large-5 columns">
+                    <label>E-mail
+                        <input type="email" name="email">
+                    </label>
+                </div>
+                <div class="row text-center">
+                    <label>
+                        <input class="button column small-3" type="submit" value="Cadastrar">
+                    </label>
+                </div>
+            </div>
+        </form>
+
+  </body>
+</html>
