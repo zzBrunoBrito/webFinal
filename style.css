@@ -3,7 +3,6 @@ header{
     background: #1D6307;
     font-size: 2em;
     color: white;
-
 }
 
 header>a{
@@ -20,8 +19,6 @@ header+form{
 }
 
 header+img{
-    /*width: 907px;*/
-    /*height: 425px;*/
     position: absolute;
     z-index: -1;
     opacity: 0.3;
@@ -44,19 +41,14 @@ div>input[value=Entrar]{
     background: #49D945;
     border-radius: 10px;
     margin-top: 10px;
-    /*top: calc(50% - 125px);*/
-    /*z-index: -3;*/
 }
 
 .pdf:nth-child(1){
     margin-left: 5%;
-    left: 10%;
-
 }
 
 .pdf:nth-child(2){
     margin-right: 5%;
-    right: 10%;
 }
 
 i{
@@ -73,49 +65,57 @@ i{
 .toast{
     padding: 25px;
     position: absolute;
-    background: #1D6307;
+    background: #0A702E;
     color: white;
     border-radius: 3px;
     left: calc(50% - 230px);
     top:15%;
     opacity: 0;
+    -webkit-animation: fade 1.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
-    header{
-        background: red;
-    }
-
     .toast{
-        text-align: center;
-        max-width: 250px;
-        left: calc(50% - 125px);
+        width:100%;
+        left: 0;
+        top: 20%;
     }
     .pdf{
-        /*padding: 30px;*/
-        text-align: center;
-        position: relative;
+        position: absolute;
+        left: calc(50% - 125px);
         width:250px;
         height: 180px;
     }
 
-    .pdf:nth-child(1){
+    div.pdf:nth-child(1){
         margin-bottom: 3%;
+        top:30%;
 
     }
 
-    .pdf:nth-child(2){
+    div.pdf+div.pdf{
         margin-top: 3%;
-
+        top:50%;
     }
 
     body>img{
         position: absolute;
         z-index: -1;
         opacity: 0.3;
-
         top: calc(50% - 85px);
         left: 0;
     }
