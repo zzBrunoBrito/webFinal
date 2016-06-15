@@ -67,11 +67,11 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <header class="top-bar row">
+    <header style="background: #1D6307; max-width: 100%" class="top-bar row">
         <p class="top-bar-title">Bem-vindo, <?php echo $_SESSION['nome']; ?></p>
         <a class="top-bar-right" href="#">Sair</a>
     </header>
-
+    <img class="teste" src="images/enfermagem.png"/>
     <section class="row text-center">
 
         <div class="pdf small-10 large-6 column">

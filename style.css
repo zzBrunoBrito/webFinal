@@ -3,29 +3,17 @@ header{
     background: #1D6307;
     font-size: 2em;
     color: white;
+
+}
+
+header>a{
+    color: white;
+    font-size: 0.5em;
 }
 
 label{
     font-size: 1em;
 }
-
-.button:link{
-    background: #2CA615;
-}
-
-.button:visited{
-    background: #1D6307;
-}
-
-.button:hover{
-    background: #1D6307;
-}
-
-.button:active{
-    background: #1D6307;
-}
-
-
 
 header+form{
     padding-top: 100px;
@@ -53,14 +41,12 @@ div>input[value=Entrar]{
     position: relative;
     width: 25%;
     height: 250px;
-    background: #C3C0C3;
-    border-radius: 4px;
+    background: #49D945;
+    border-radius: 10px;
     margin-top: 10px;
     /*top: calc(50% - 125px);*/
     /*z-index: -3;*/
 }
-
-    
 
 .pdf:nth-child(1){
     margin-left: 5%;
@@ -75,6 +61,7 @@ div>input[value=Entrar]{
 
 i{
     font-size: 2.5em;
+    color: black;
 }
 
 .buttons{
@@ -86,7 +73,8 @@ i{
 .toast{
     padding: 25px;
     position: absolute;
-    background: #D5D2D5;
+    background: #1D6307;
+    color: white;
     border-radius: 3px;
     left: calc(50% - 230px);
     top:15%;
@@ -96,14 +84,19 @@ i{
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
+    header{
+        background: red;
+    }
+
     .toast{
         text-align: center;
         max-width: 250px;
         left: calc(50% - 125px);
     }
     .pdf{
+        /*padding: 30px;*/
+        text-align: center;
         position: relative;
-        background: #C3C0C3;
         width:250px;
         height: 180px;
     }
